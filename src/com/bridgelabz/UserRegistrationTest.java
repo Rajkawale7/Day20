@@ -3,15 +3,15 @@ import org.junit.Assert;
 import org.junit.Test;
 public class UserRegistrationTest {
 	@Test
-    public void givenEmail_WhenProper_ShouldReturn_True() {
+    public void givenPhone_WhenProper_ShouldReturn_True() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validateEmail("abc.xyz@bl.co.in");
+        boolean result = userValidater.validatePhone("919049331047");
         Assert.assertEquals(true,result);
     }
     @Test
-    public void givenEmail_WhenNotProper_ShouldReturn_False() {
+    public void givenPhone_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validateEmail("shubham@.com");
+        boolean result = userValidater.validatePhone("9049331047");
         Assert.assertEquals(false,result);
-	    }
-	}
+    }
+}
