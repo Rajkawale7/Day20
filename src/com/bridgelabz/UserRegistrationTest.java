@@ -11,7 +11,7 @@ public class UserRegistrationTest {
     @Test
     public void givenEmail_WhenNotProper_ShouldReturn_False() {
         UserValidater userValidater = new UserValidater();
-        boolean result = userValidater.validateEmail("shubham@.com");
+        boolean result = userValidater.validateEmail("Raj@.com");
         Assert.assertEquals(false,result);
 	    }
 	}
